@@ -39,11 +39,11 @@ const Card = ({title,from,message,handleMessages,id,loc, purpose,subtext,idp}) =
           key: '2',
           label: (
             <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
-              2nd menu item (disabled)
+            <p> Feature under dev</p>
             </a>
           ),
 
-          disabled: false,
+          disabled: true,
         },
        
       ];

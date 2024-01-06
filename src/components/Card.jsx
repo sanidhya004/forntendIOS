@@ -60,14 +60,14 @@ const Card = ({title,from,message,handleMessages,id,loc, purpose,subtext,idp}) =
 
 
   return (
-
-    <div className={' rounded-xl sm:p-2  overflow-x-hidden flex gap-2   lg:h-[650px]  h-[450px]'}>
+  <>
+    <div className={' rounded-xl sm:p-2  overflow-x-hidden sm:flex gap-2   lg:h-[600px]  h-[450px] side  hidden '}>
      
     <div className={ ' h-full w-full  rounded-xl  scale-down-right flex z-0'}>
       {from &&<Mail title={title} from={from} isLarge={isLarge} handleisLarge={handleisLarge} message={message} id={id}/> }
       {loc &&<Mapview title={title} from={from} isLarge={isLarge} handleisLarge={handleisLarge} purpose={purpose} subtext={subtext} id={id}/>}
     </div>
-    <div className='sm:static absolute left-6/12   top-0'>
+    <div className='absolute left-6/12   top-0'>
     <Dropdown
     menu={{
       items,
@@ -86,6 +86,32 @@ const Card = ({title,from,message,handleMessages,id,loc, purpose,subtext,idp}) =
     </Dropdown>
     </div>
     </div>
+    <div className={' rounded-xl sm:p-2  overflow-x-hidden flex gap-2   lg:h-[600px]  h-[450px]  sm:hidden   '}>
+     
+     <div className={ ' h-full w-full  rounded-xl  scale-down-right flex z-0'}>
+       {from &&<Mail title={title} from={from} isLarge={isLarge} handleisLarge={handleisLarge} message={message} id={id}/> }
+       {loc &&<Mapview title={title} from={from} isLarge={isLarge} handleisLarge={handleisLarge} purpose={purpose} subtext={subtext} id={id}/>}
+     </div>
+     <div className='absolute left-6/12   top-0'>
+     <Dropdown
+     menu={{
+       items,
+     }}
+ 
+   >
+     <button   className="bg-[#DCDCDD] h-fit p-3    text-white addbtn rounded-full ">
+    
+ 
+ 
+         <FaPlus/>
+ 
+  
+ 
+     </button>
+     </Dropdown>
+     </div>
+     </div>
+    </>
 
   )
 }

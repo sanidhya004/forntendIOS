@@ -237,6 +237,12 @@ body{
     mask-image: linear-gradient(to right,black 2%,transparent 95%);
       
   }
+  .vert{
+    -webkit-mask-image: linear-gradient(to top,black 0.5%,transparent 99.9989%);
+    
+    mask-image: linear-gradient(to top,black 0.5%,transparent 99.9%);
+      
+  }
 
   .ant-divider{
     background-color:#6E6F6F;

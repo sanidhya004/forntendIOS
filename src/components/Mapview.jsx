@@ -1,6 +1,7 @@
 import React from "react";
 import { Suspense } from "react";
 
+
 import {
   FaEnvelope,
   FaBackspace,
@@ -49,7 +50,7 @@ const Mapview = ({ title, from, isLarge, handleisLarge,purpose,subtext,id }) => 
           </div>
         </div>
         <div className="sm:w-2/5 sm:text-wrap px-10">
-          <p className="font-extrabold capitalize py-9">{id}</p>
+          <p className="font-extrabold capitalize py-9">{title}</p>
           <div className="flex flex-col">
           <p>{purpose}</p>
           <p>{subtext}</p>

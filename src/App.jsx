@@ -3,8 +3,23 @@ import { useEffect } from "react";
 import Slides from "./components/Slides.jsx";
 import Navbar from "./components/Navbar.jsx";
 import data from '../src/assets/data.json'
+import { Button, message, Space } from 'antd';
+
 
 const App = () => {
+  const [messageApi, contextHolder] = message.useMessage();
+  const success = () => {
+    messageApi.open({
+      type: 'success',
+      content: 'Location tab added Swipe right',
+    });
+  };
+  const error = () => {
+    messageApi.open({
+      type: 'error',
+      content: 'Feature not implementable',
+    });
+  };
   const [time, setTime] = useState("");
   const [state, setState] = useState(0);
   const tempdata=data.messages
@@ -49,6 +64,7 @@ const App = () => {
      })
 
     setMessages(temp)
+    success()
     const element = document.getElementById(id);
     if (element) {
       window.scrollTo({
@@ -65,19 +81,25 @@ const App = () => {
   }
   return (
     <div className="bg scroll sm:h-screen bg-pan-left min-h-[100dvh] relative">
-      <div className="float relative h-screen w-screen   sm:px-20 pt-20 flex flex-col gap-5 px-3">
+      {contextHolder}
+      <div className="sm:hidden fixed  left-9 w-fit z-0">
+        <div className="text-9xl  text-gray-600 opacity-10 inbox_text font-light">
+            Review <br/> Inbox
+          </div>
+      </div>
+      <div className="float relative h-screen w-screen   sm:px-20 pt-20 flex flex-col gap-5 px-3 z-30">
         {/* Header bg */}
         <div className=" sm:flex justify-between hidden ">
           <div className=" sm:text-9xl text-xl text-gray-600 opacity-10 inbox_text font-light">
             Review Inbox
           </div>
-          <div className="text-sm text-gray-900 ">{time}</div>
+          <div className="text-sm text-gray-900 " onClickCapture={success}>{time}</div>
         </div>
       
-        <div className="flex  sm:max-h-6/12 sm:flex-row flex-col ">  
+        <div className="flex  sm:max-h-6/12 sm:flex-row flex-col  ">  
         {/* Navbar */}
-          <div className="text-gray-500 w-2/5  max-h-full sm:static fixed bottom-0 ">
-            <Navbar message={messages} setState={handleState} state={state} />
+          <div className="text-gray-500 w-2/5  max-h-full sm:static fixed bottom-0" >
+            <Navbar message={messages} setState={handleState} state={state} error={error} />
           </div>
         {/* Carousel */}
           <div className="sm:w-3/5 w-full">

@@ -3,7 +3,7 @@ import {FaEnvelope,FaBackspace} from 'react-icons/fa'
 
 const Mail = ({title,from,isLarge,handleisLarge,message}) => {
   return (
-    <div className='h-full  text-[#333232] relative w-full bg-[#F9F8F8] rounded-xl  '>
+    <div className='h-full  text-[#333232] relative w-full bg-[#F9F8F8] rounded-xl text-wrap '>
         {/* header */}
       <div className='bg-[#F3F2F2] w-full px-10 h-3 py-6 flex items-center justify-between rounded-t-xl'>
           
@@ -15,8 +15,8 @@ const Mail = ({title,from,isLarge,handleisLarge,message}) => {
        <p className='text-xl'>{from}</p>
         <p className=' text-3xl font-extrabold capitalize'>{title}</p>
        </div>
-       <div className='sm:w-2/5 sm:text-wrap'>
-        <p>{message}</p>
+       <div className='sm:w-2/5 sm:text-wrap truncate text-wrap'>
+        <p className='line-clamp-6 '>{message}</p>
        </div>
 
        

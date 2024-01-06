@@ -232,9 +232,9 @@ body{
   }
 
   .side{
-    -webkit-mask-image: linear-gradient(to bottom,black 2%,transparent 95%);
+    -webkit-mask-image: linear-gradient(to right,black 0.1%,transparent 99%);
     
-    mask-image: linear-gradient(to right,black 2%,transparent 95%);
+    mask-image: linear-gradient(to right,black 0.1%,transparent 99%);
       
   }
   .vert{

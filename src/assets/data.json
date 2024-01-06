@@ -2,49 +2,49 @@
     "messages":[
         {
             "id":11,
-            "title":"Trip",
+            "title":"Trip To Bali",
             "from":"Emilt",
-            "messages":"wdwdwd   wdwdwd",
+            "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu orci, pellentesque nec condimentum a, lacinia eu enim. Nam volutpat augue at convallis congue. Quisque facilisis auctor risus laoreet posuere. Vestibulum tristique pretium arcu, id tincidunt diam eleifend a. Integer laoreet pretium augue, ac elementum augue vestibulum in. Phasellus porttitor, ex id posuere varius, mi justo ullamcorper magna, non congue risus orci non nulla. Nam ut arcu rhoncus, scelerisque nibh vel, ornare ante. Pellentesque et justo dictum, pulvinar odio eu, laoreet enim. Nunc dictum est ex.",
             "nested":[{"id":"1","title":"rip1",
             "from":"Emilt",
-            "messages":"wdwdwd   wdwdwd"
+            "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu orci, pellentesque nec condimentum a, lacinia eu enim. Nam volutpat augue at convallis congue. Quisque facilisis auctor risus laoreet posuere. Vestibulum tristique pretium arcu, id tincidunt diam eleifend a. Integer laoreet pretium augue, ac elementum augue vestibulum in. Phasellus porttitor, ex id posuere varius, mi justo ullamcorper magna, non congue risus orci non nulla. Nam ut arcu rhoncus, scelerisque nibh vel, ornare ante. Pellentesque et justo dictum, pulvinar odio eu, laoreet enim. Nunc dictum est ex."
              }]
         },
         {
             "id":123,
-            "title":"Goa",
+            "title":"Let's Go out",
             "from":"Frank",
-            "messages":" wdwdw wdwdw",
+            "message":"Hey there,Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu orci, pellentesque nec condimentum a, lacinia eu enim. Nam volutpat augue at convallis congue. Quisque facilisis auctor risus laoreet posuere. Vestibulum tristique pretium arcu, id tincidunt diam eleifend a. Integer laoreet pretium augue, ac elementum augue vestibulum in. Phasellus porttitor, ex id posuere varius, mi justo ullamcorper magna, non congue risus orci non nulla. Nam ut arcu rhoncus, scelerisque nibh vel, ornare ante. Pellentesque et justo dictum, pulvinar odio eu, laoreet enim. Nunc dictum est ex.",
             "nested":[{"id":"12","title":"rip2",
             "from":"Emilt",
-            "messages":"wdwdwd   wdwdwd"
+            "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu orci, pellentesque nec condimentum a, lacinia eu enim. Nam volutpat augue at convallis congue. Quisque facilisis auctor risus laoreet posuere. Vestibulum tristique pretium arcu, id tincidunt diam eleifend a. Integer laoreet pretium augue, ac elementum augue vestibulum in. Phasellus porttitor, ex id posuere varius, mi justo ullamcorper magna, non congue risus orci non nulla. Nam ut arcu rhoncus, scelerisque nibh vel, ornare ante. Pellentesque et justo dictum, pulvinar odio eu, laoreet enim. Nunc dictum est ex."
              }]
         },
         {
             "id":125,
-            "title":"First",
+            "title":"Dummy",
             "from":"Frank",
-            "messages":" wdwdw wdwdw",
+            "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu orci, pellentesque nec condimentum a, lacinia eu enim. Nam volutpat augue at convallis congue. Quisque facilisis auctor risus laoreet posuere. Vestibulum tristique pretium arcu, id tincidunt diam eleifend a. Integer laoreet pretium augue, ac elementum augue vestibulum in. Phasellus porttitor, ex id posuere varius, mi justo ullamcorper magna, non congue risus orci non nulla. Nam ut arcu rhoncus, scelerisque nibh vel, ornare ante. Pellentesque et justo dictum, pulvinar odio eu, laoreet enim. Nunc dictum est ex.",
             "nested":[
                 {"id":"41","title":"slasst",
             "from":"Emilt",
-            "messages":"wdwdwd   wdwdwd"
+            "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu orci, pellentesque nec condimentum a, lacinia eu enim. Nam volutpat augue at convallis congue. Quisque facilisis auctor risus laoreet posuere. Vestibulum tristique pretium arcu, id tincidunt diam eleifend a. Integer laoreet pretium augue, ac elementum augue vestibulum in. Phasellus porttitor, ex id posuere varius, mi justo ullamcorper magna, non congue risus orci non nulla. Nam ut arcu rhoncus, scelerisque nibh vel, ornare ante. Pellentesque et justo dictum, pulvinar odio eu, laoreet enim. Nunc dictum est ex."
              },
              {"id":"61","title":"lasst",
             "from":"Emilt",
-            "messages":"wdwdwd   wdwdwd"
+            "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu orci, pellentesque nec condimentum a, lacinia eu enim. Nam volutpat augue at convallis congue. Quisque facilisis auctor risus laoreet posuere. Vestibulum tristique pretium arcu, id tincidunt diam eleifend a. Integer laoreet pretium augue, ac elementum augue vestibulum in. Phasellus porttitor, ex id posuere varius, mi justo ullamcorper magna, non congue risus orci non nulla. Nam ut arcu rhoncus, scelerisque nibh vel, ornare ante. Pellentesque et justo dictum, pulvinar odio eu, laoreet enim. Nunc dictum est ex."
              }
             ]
         },
         {
             "id":133,
-            "title":"FINALE",
+            "title":"Test Op",
             "from":"Frank",
-            "messages":" wdwdw wdwdw",
+            "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu orci, pellentesque nec condimentum a, lacinia eu enim. Nam volutpat augue at convallis congue. Quisque facilisis auctor risus laoreet posuere. Vestibulum tristique pretium arcu, id tincidunt diam eleifend a. Integer laoreet pretium augue, ac elementum augue vestibulum in. Phasellus porttitor, ex id posuere varius, mi justo ullamcorper magna, non congue risus orci non nulla. Nam ut arcu rhoncus, scelerisque nibh vel, ornare ante. Pellentesque et justo dictum, pulvinar odio eu, laoreet enim. Nunc dictum est ex.",
             "nested":[
                 {"id":"16","title":"rip2",
             "from":"Emilt",
-            "messages":"wdwdwd   wdwdwd"
+            "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu orci, pellentesque nec condimentum a, lacinia eu enim. Nam volutpat augue at convallis congue. Quisque facilisis auctor risus laoreet posuere. Vestibulum tristique pretium arcu, id tincidunt diam eleifend a. Integer laoreet pretium augue, ac elementum augue vestibulum in. Phasellus porttitor, ex id posuere varius, mi justo ullamcorper magna, non congue risus orci non nulla. Nam ut arcu rhoncus, scelerisque nibh vel, ornare ante. Pellentesque et justo dictum, pulvinar odio eu, laoreet enim. Nunc dictum est ex."
              }
                
             ]

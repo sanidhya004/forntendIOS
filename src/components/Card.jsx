@@ -6,8 +6,9 @@ import {FaPlus} from 'react-icons/fa'
 import { DownOutlined, SmileOutlined } from '@ant-design/icons';
 import { Dropdown, Space } from 'antd';
 
-const Card = ({title,from,message,handleMessages,id,loc, purpose,subtext}) => {
+const Card = ({title,from,message,handleMessages,id,loc, purpose,subtext,idp}) => {
 
+ 
     const dummy_arr ={id: 1,
         title: "fefef",
         from: "Mary",
@@ -15,8 +16,9 @@ const Card = ({title,from,message,handleMessages,id,loc, purpose,subtext}) => {
       I have attached my resume for your reference.
       Here are some of my Links:
       `}
+      var rand = Math.floor(Math.random() * (901)) + 100;
 
-      const dummy_arr_rest ={id: 1,
+      const dummy_arr_rest ={ id:rand ,
         title: "fefef",
         purpose:"Pasta Company",
         subtext:"good pasta",
@@ -30,7 +32,7 @@ const Card = ({title,from,message,handleMessages,id,loc, purpose,subtext}) => {
         {
           key: '1',
           label: (
-           <p onClick={()=>{handleMessages(dummy_arr_rest,id)}} >Add Location</p>
+           <p onClick={()=>{handleMessages(dummy_arr_rest,rand,idp)}} >Add Location</p>
           ),
         },
         {
@@ -59,19 +61,20 @@ const Card = ({title,from,message,handleMessages,id,loc, purpose,subtext}) => {
 
   return (
 
-    <div className={' rounded-xl sm:p-2  overflow-x-hidden flex gap-2   lg:h-[650px]  h-[500px]'}>
+    <div className={' rounded-xl sm:p-2  overflow-x-hidden flex gap-2   lg:h-[650px]  h-[450px]'}>
      
     <div className={ ' h-full w-full  rounded-xl  scale-down-right flex z-0'}>
-      {from &&<Mail title={title} from={from} isLarge={isLarge} handleisLarge={handleisLarge} message={message} /> }
-      {loc &&<Mapview title={title} from={from} isLarge={isLarge} handleisLarge={handleisLarge} purpose={purpose} subtext={subtext} />}
+      {from &&<Mail title={title} from={from} isLarge={isLarge} handleisLarge={handleisLarge} message={message} id={id}/> }
+      {loc &&<Mapview title={title} from={from} isLarge={isLarge} handleisLarge={handleisLarge} purpose={purpose} subtext={subtext} id={id}/>}
     </div>
+    <div className='sm:static absolute left-6/12   top-0'>
     <Dropdown
     menu={{
       items,
     }}
 
   >
-    <button   className="bg-[#DCDCDD] h-fit p-3    text-white addbtn rounded-full sm:static absolute left-1/4 z-50 top-5">
+    <button   className="bg-[#DCDCDD] h-fit p-3    text-white addbtn rounded-full ">
    
 
 
@@ -81,6 +84,7 @@ const Card = ({title,from,message,handleMessages,id,loc, purpose,subtext}) => {
 
     </button>
     </Dropdown>
+    </div>
     </div>
 
   )

@@ -6,15 +6,17 @@ import {
   FaBackspace,
   FaMapMarkerAlt,
   FaLocationArrow,
+  FaShare,
+  FaDumpster
 } from "react-icons/fa";
 import { Divider } from "antd";
 import LazyLoad from "react-lazy-load";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import LoadGlimmer from "./LoadGlimmer";
 
-const Mapview = ({ title, from, isLarge, handleisLarge,purpose,subtext }) => {
+const Mapview = ({ title, from, isLarge, handleisLarge,purpose,subtext,id }) => {
   return (
-    <div className="h-full  text-[#333232] relative w-screen mr-9 bg-[#F9F8F8] rounded-xl">
+    <div className="h-full  text-[#333232] relative w-full  bg-[#F9F8F8] rounded-xl">
       {/* header */}
       <div className="bg-[#F3F2F2] w-full px-10 h-3 py-6 flex items-center justify-between rounded-t-xl">
         <div className="flex gap-2 items-center">
@@ -47,7 +49,7 @@ const Mapview = ({ title, from, isLarge, handleisLarge,purpose,subtext }) => {
           </div>
         </div>
         <div className="sm:w-2/5 sm:text-wrap px-10">
-          <p className="font-extrabold capitalize py-9">{title}</p>
+          <p className="font-extrabold capitalize py-9">{id}</p>
           <div className="flex flex-col">
           <p>{purpose}</p>
           <p>{subtext}</p>
@@ -62,21 +64,23 @@ const Mapview = ({ title, from, isLarge, handleisLarge,purpose,subtext }) => {
           style={{ fontWeight: "bolder" }}
         />
         <div className="flex  py-4 gap-2  text-[#6E6F6F] overflow-x-hidden text-sm font-extrabold  ">
-          <button className="bg-[#EEEFEE] pl-5  pr-7 py-2 rounded-3xl flex justify-start items-center gap-2 ">
+          <button className="bg-[#EEEFEE] pl-5  pr-7 py-2 rounded-3xl flex justify-start items-center gap-2  ">
             <div>
               <FaLocationArrow />
             </div>
-            <div className="text-left">
+            <div className="text-left hidden sm:block">
               <p>Get Directions</p>{" "}
-              <p className="text-[0.75rem] font-extralight mt-[-5px] opacity-60">
+              <p className="sm:text-[0.75rem] font-extralight mt-[-5px] opacity-60 ">
                 Enable location
               </p>
             </div>
           </button>
           <button className="bg-[#EEEFEE] px-4 py-2 rounded-3xl">
-            Forward
+            <FaShare className="block sm:hidden"/><p className="hidden sm:block">Forward</p>
           </button>
-          <button className="bg-[#EEEFEE] px-4 py-2 rounded-3xl">Delete</button>
+          <button className="bg-[#EEEFEE] px-4 py-2 rounded-3xl">
+          <FaDumpster className="block sm:hidden"/><p className="hidden sm:block">Delete</p>
+          </button>
         </div>
       </div>
     </div>

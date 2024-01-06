@@ -24,6 +24,8 @@ const App = () => {
       
         inline: "start",
       });
+
+    
     }
   };
 
@@ -33,19 +35,31 @@ const App = () => {
   }, [time]);
 
  
-  const handleMessages=(arr,key)=>{
+  const handleMessages=(arr,id,key)=>{
+    
     const temp=[]
-     messages.map((item,id)=>{
-        if(id==key){
+     messages.map((item)=>{
+        if(item.id==key){
         
-          item.nested.unshift(arr);
+          item.nested.push(arr);
 
         }
         temp.push(item)
+
      })
 
     setMessages(temp)
-    console.log(temp)
+    const element = document.getElementById(id);
+    if (element) {
+      window.scrollTo({
+        left: element.scrollWidth,
+        block: 'nearest',
+        behavior: 'smooth',
+      });
+    }
+    
+
+    
     
      
   }

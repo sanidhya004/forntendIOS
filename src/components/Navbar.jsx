@@ -14,7 +14,7 @@ const Navbar = ({message=[],setState,state}) => {
         </button>
         {message.map((item,id)=>{
             return(
-       <button onClick={()=>{setState(id)}} className= {id==state?" scale-up-ver-to text-black sm:pr-[18rem] sm:pl-3 py-2 bg-[#cbcacc] sm:w-2/5 rounded-xl backdrop-blur-3xl border-white/50 border-2 flex justify-start items-center gap-4 text-sm":" sm:pr-[18rem] sm:pl-3 py-2 hover:bg-[#cbcacc] w-2/5 rounded-xl backdrop-blur-2xl hover:border-white/50 hover:border-2 flex justify-start items-center gap-4 text-sm"}>
+       <button onClick={()=>{setState(item.id)}} className= {item.id==state?" scale-up-ver-to text-black sm:pr-[18rem] sm:pl-3 py-2 bg-[#cbcacc] sm:w-2/5 rounded-xl backdrop-blur-3xl border-white/50 border-2 flex justify-start items-center gap-4 text-sm":" sm:pr-[18rem] sm:pl-3 py-2 hover:bg-[#cbcacc] w-2/5 rounded-xl backdrop-blur-2xl hover:border-white/50 hover:border-2 flex justify-start items-center gap-4 text-sm"}>
              <p>
                 {item.message && <FaEnvelope/>}
                 {!item.message && <FaMapMarkerAlt/>}
@@ -31,7 +31,7 @@ const Navbar = ({message=[],setState,state}) => {
       <ul className='flex overflow-x-auto gap-[30px] w-screen items-end '>
       {message.map((item,id)=>{
             return(
-       <li onClick={()=>{setState(id)}} className= {id==state?" text-black flex min-w-fit bg-[#cbcacc] rounded-xl p-4":"flex min-w-fit "}>
+       <li onClick={()=>{setState(item.id)}} className= {item.id==state?" text-black flex min-w-fit bg-[#cbcacc] rounded-xl p-4":"flex min-w-fit "}>
              <p>
                 {item.message && <FaEnvelope/>}
                 {!item.message && <FaMapMarkerAlt/>}

@@ -24,7 +24,7 @@ const Mail = ({title,from,isLarge,handleisLarge,message}) => {
 
       </div>
       {/* Footer */}
-      <div className='flex px-10 py-4 gap-2 text-[#6E6F6F] ' >
+      <div className='flex sm:px-10 py-4 gap-2 text-[#6E6F6F] absolute bottom-0 px-2' >
            <button className='bg-[#EEEFEE] px-4 py-2 rounded-md'>Reply</button>
            <button className='bg-[#EEEFEE] px-4 py-2 rounded-md'>Forward</button>
            <button className='bg-[#EEEFEE] px-4 py-2 rounded-md'>Delete</button>

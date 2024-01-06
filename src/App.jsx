@@ -21,7 +21,7 @@ const App = () => {
     });
   };
   const [time, setTime] = useState("");
-  const [state, setState] = useState(0);
+  const [state, setState] = useState(11);
   const tempdata=data.messages
   const [messages,setMessages]=useState(tempdata)
   const Timehandler = () => {

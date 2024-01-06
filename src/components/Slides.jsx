@@ -25,7 +25,7 @@ const Slides = ({message=[],state,handleMessages}) => {
     
   return (
   
-    <div className='flex flex-col p-3   scroll  h-[500px]  overflow-y-hidden ' >
+    <div className='flex flex-col p-3   scroll  h-[500px]   ' >
       <Suspense fallback={<LoadGlimmer/>}>
      {message.map((item,id)=>{
       console.log("out",item)

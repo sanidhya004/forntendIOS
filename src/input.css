@@ -372,10 +372,5 @@ body{
     }
   }
   
-  .slick-slider {
-    margin:0 -15px;
-}
-.slick-slide {
-   display: flex;
-   gap:0px;
-}
+ 
+.slick-list{padding:0 20% 0 0 !important;}

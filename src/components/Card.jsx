@@ -59,20 +59,8 @@ const Card = ({title,from,message,handleMessages,id,loc, purpose,subtext}) => {
 
   return (
 
-    <div className={' rounded-xl p-2  overflow-x-hidden flex gap-2 '}
-     style={{
-        position:isLarge?'absolute':'',
-        top:0,
-        left:0,
-        width: isLarge ? '100vw' : '600px', // Adjust width as needed
-        height: isLarge? '100vh' : '500px', // Adjust height as needed
-        zIndex:3,
-        marginTop:0,
-        marginBottom:0
-
-
-      }}
-     >
+    <div className={' rounded-xl sm:p-2  overflow-x-hidden flex gap-2  h-[500px]'}>
+     
     <div className={ ' h-full w-full  rounded-xl  scale-down-right flex z-0'}>
       {from &&<Mail title={title} from={from} isLarge={isLarge} handleisLarge={handleisLarge} message={message} /> }
       {loc &&<Mapview title={title} from={from} isLarge={isLarge} handleisLarge={handleisLarge} purpose={purpose} subtext={subtext} />}

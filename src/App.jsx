@@ -50,7 +50,7 @@ const App = () => {
      
   }
   return (
-    <div className="bg scroll sm:h-screen bg-pan-left h-[100dvh]">
+    <div className="bg scroll sm:h-screen bg-pan-left max-h-[100dvh]">
       <div className="float relative h-screen w-screen   sm:px-20 pt-20 flex flex-col gap-5 px-3">
         {/* Header bg */}
         <div className=" sm:flex justify-between hidden ">

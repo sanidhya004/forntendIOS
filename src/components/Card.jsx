@@ -59,7 +59,7 @@ const Card = ({title,from,message,handleMessages,id,loc, purpose,subtext}) => {
 
   return (
 
-    <div className={' rounded-xl sm:p-2  overflow-x-hidden flex gap-2  h-[500px]'}>
+    <div className={' rounded-xl sm:p-2  overflow-x-hidden flex gap-2   lg:h-[650px]  h-[500px]'}>
      
     <div className={ ' h-full w-full  rounded-xl  scale-down-right flex z-0'}>
       {from &&<Mail title={title} from={from} isLarge={isLarge} handleisLarge={handleisLarge} message={message} /> }

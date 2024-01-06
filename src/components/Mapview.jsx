@@ -56,7 +56,7 @@ const Mapview = ({ title, from, isLarge, handleisLarge,purpose,subtext }) => {
         </div>
       </div>
       {/* Footer */}
-      <div className="absolute  bottom-4 px-10 w-full">
+      <div className=" px-10 w-full">
         <Divider
           className="mb-[-7px] text-[#6E6F6F] "
           style={{ fontWeight: "bolder" }}

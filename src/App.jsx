@@ -50,7 +50,7 @@ const App = () => {
      
   }
   return (
-    <div className="bg scroll sm:h-screen bg-pan-left max-h-[100dvh]">
+    <div className="bg scroll sm:h-screen bg-pan-left min-h-[100dvh] relative">
       <div className="float relative h-screen w-screen   sm:px-20 pt-20 flex flex-col gap-5 px-3">
         {/* Header bg */}
         <div className=" sm:flex justify-between hidden ">
@@ -62,7 +62,7 @@ const App = () => {
       
         <div className="flex  sm:max-h-6/12 sm:flex-row flex-col ">  
         {/* Navbar */}
-          <div className="text-gray-500 w-2/5  max-h-full sm:static absolute bottom-0 ">
+          <div className="text-gray-500 w-2/5  max-h-full sm:static fixed bottom-0 ">
             <Navbar message={messages} setState={handleState} state={state} />
           </div>
         {/* Carousel */}

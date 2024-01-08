@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {FaEnvelope,FaPlus,FaMapMarkerAlt} from 'react-icons/fa'
+import {FaEnvelope,FaPlus,FaMapMarkerAlt,FaTwitter} from 'react-icons/fa'
 import { Carousel } from 'antd'
 
 const Navbar = ({message=[],setState,state,error}) => {
@@ -8,7 +8,7 @@ const Navbar = ({message=[],setState,state,error}) => {
    
   return (
     <>
-    <div  className='sm:flex sm:flex-col gap-5 container cursor-pointer relative  hidden ' >
+    <div  className='sm:flex sm:flex-col gap-5 container cursor-pointer relative  hidden  ' >
           <button className= " text-black sm:pr-[18rem] sm:pl-3 py-2  w-2/5 rounded-xl backdrop-blur-3xl  flex justify-start items-center gap-4 text-sm" onClick={error}>
              <p><FaPlus/></p> <p className='font-semibold'>New </p>
         </button>
@@ -19,8 +19,8 @@ const Navbar = ({message=[],setState,state,error}) => {
                 {item.message && <FaEnvelope/>}
                 {!item.message && <FaMapMarkerAlt/>}
              </p> 
-             <div className='flex gap-2 '><p className='font-semibold line-clamp-1'>{item.title}</p>|<p className='font-light'>{item?.from}</p> </div>
-        </button> 
+             <div className='flex gap-2 '><p className='font-semibold line-clamp-1'>{item.title}</p>|<p className='font-light line-clamp-1'>{item?.from}</p> </div>
+       </button>
             )
         })}
        
@@ -33,8 +33,10 @@ const Navbar = ({message=[],setState,state,error}) => {
             return(
        <li onClick={()=>{if(item.id!=state){setState(item.id)}}} className= {item.id==state?" text-black flex min-w-fit bg-[#cbcacc] rounded-xl p-4 border-white/50 border-2":"flex min-w-fit "}>
              <p>
-                {item.message && <FaEnvelope/>}
-                {!item.message && <FaMapMarkerAlt/>}
+                {item.type=="mail" && <FaEnvelope/>}
+                {item.type=="map"  && <FaMapMarkerAlt/>}
+            
+              
              </p> 
              <div className='flex gap-2 '><p className='w-fit' >{item.title}</p>|<p className='font-light'>{item?.from}</p> </div>
         </li> 

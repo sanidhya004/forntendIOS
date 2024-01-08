@@ -36,7 +36,7 @@ const App = () => {
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
-      
+        
         inline: "start",
       });
 
@@ -87,7 +87,7 @@ const App = () => {
             Review <br/> Inbox
           </div>
       </div>
-      <div className="float relative h-screen w-screen   sm:px-20 pt-20 flex flex-col gap-5 px-3 z-30">
+      <div className="float relative h-fit w-screen   sm:px-20 pt-10 flex flex-col gap-5 px-3 z-30">
         {/* Header bg */}
         <div className=" sm:flex justify-between hidden ">
           <div className=" sm:text-9xl text-xl text-gray-600 opacity-10 inbox_text font-light">
@@ -102,7 +102,7 @@ const App = () => {
             <Navbar message={messages} setState={handleState} state={state} error={error} />
           </div>
         {/* Carousel */}
-          <div className="sm:w-3/5 w-full">
+          <div className="sm:w-3/5 w-full  h-fit">
             <Slides message={messages} state={state} handleMessages={handleMessages}/>
           </div>
         </div>

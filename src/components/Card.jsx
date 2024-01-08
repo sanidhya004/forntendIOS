@@ -5,9 +5,10 @@ import LazyLoad from 'react-lazy-load';
 import {FaPlus} from 'react-icons/fa'
 import { DownOutlined, SmileOutlined } from '@ant-design/icons';
 import { Dropdown, Space } from 'antd';
+import ScheduleCard from './ScheduleCard';
 
-const Card = ({title,from,message,handleMessages,id,loc, purpose,subtext,idp}) => {
-
+const Card = ({title,from,message,handleMessages,id,loc, purpose,subtext,idp,type,time}) => {
+     
  
     const dummy_arr ={id: 1,
         title: "fefef",
@@ -61,14 +62,15 @@ const Card = ({title,from,message,handleMessages,id,loc, purpose,subtext,idp}) =
 
   return (
   <>
-    <div className={' rounded-xl sm:p-2  overflow-x-hidden sm:flex gap-2   lg:h-[600px]  h-[450px] side  hidden '}>
+    <div className={' rounded-lg sm:p-2  overflow-x-hidden sm:flex gap-2   h-fit  hidden '}>
      
-    <div className={ ' h-full w-full  rounded-xl  scale-down-right flex z-0'}>
-      {from &&<Mail title={title} from={from} isLarge={isLarge} handleisLarge={handleisLarge} message={message} id={id}/> }
-      {loc &&<Mapview title={title} from={from} isLarge={isLarge} handleisLarge={handleisLarge} purpose={purpose} subtext={subtext} id={id}/>}
+    <div className={ ' h-full w-full  rounded-xl  scale-down-right flex z-0 flex-6'}>
+      {type=="mail" &&<Mail title={title} from={from} isLarge={isLarge} handleisLarge={handleisLarge} message={message} id={id}/> }
+      {type=="map" && <Mapview title={title} from={from} isLarge={isLarge} handleisLarge={handleisLarge} purpose={purpose} subtext={subtext} id={id}/>}
+      {type=="schedule" && <ScheduleCard title={title} from={from} isLarge={isLarge} handleisLarge={handleisLarge} purpose={purpose} subtext={subtext} id={id}/>}
     </div>
     <div className='absolute left-6/12   top-0'>
-    <Dropdown
+    {/* <Dropdown
     menu={{
       items,
     }}
@@ -83,7 +85,7 @@ const Card = ({title,from,message,handleMessages,id,loc, purpose,subtext,idp}) =
  
 
     </button>
-    </Dropdown>
+    </Dropdown> */}
     </div>
     </div>
     <div className={' rounded-xl sm:p-2  overflow-x-hidden flex gap-2   lg:h-[600px]  h-[450px]  sm:hidden   '}>
@@ -91,9 +93,10 @@ const Card = ({title,from,message,handleMessages,id,loc, purpose,subtext,idp}) =
      <div className={ ' h-full w-full  rounded-xl  scale-down-right flex z-0'}>
        {from &&<Mail title={title} from={from} isLarge={isLarge} handleisLarge={handleisLarge} message={message} id={id}/> }
        {loc &&<Mapview title={title} from={from} isLarge={isLarge} handleisLarge={handleisLarge} purpose={purpose} subtext={subtext} id={id}/>}
+       {time && <ScheduleCard  isLarge={isLarge} handleisLarge={handleisLarge} id={id}/>}
      </div>
      <div className='absolute left-6/12   top-0'>
-     <Dropdown
+     {/* <Dropdown
      menu={{
        items,
      }}
@@ -108,7 +111,7 @@ const Card = ({title,from,message,handleMessages,id,loc, purpose,subtext,idp}) =
   
  
      </button>
-     </Dropdown>
+     </Dropdown> */}
      </div>
      </div>
     </>

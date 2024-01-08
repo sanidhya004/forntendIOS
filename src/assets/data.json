@@ -2,8 +2,9 @@
     "messages":[
         {
             "id":11,
-            "title":"Trip To Bali",
-            "from":"Emilt",
+            "type":"mail",
+            "title":"Cofee?",
+            "from":"Marisa Lu",
             "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu orci, pellentesque nec condimentum a, lacinia eu enim. Nam volutpat augue at convallis congue. Quisque facilisis auctor risus laoreet posuere. Vestibulum tristique pretium arcu, id tincidunt diam eleifend a. Integer laoreet pretium augue, ac elementum augue vestibulum in. Phasellus porttitor, ex id posuere varius, mi justo ullamcorper magna, non congue risus orci non nulla. Nam ut arcu rhoncus, scelerisque nibh vel, ornare ante. Pellentesque et justo dictum, pulvinar odio eu, laoreet enim. Nunc dictum est ex.",
             "nested":[{"id":"1","title":"rip1",
             "from":"Emilt",
@@ -13,6 +14,7 @@
         {
             "id":123,
             "title":"Let's Go out",
+            "type":"mail",
             "from":"Frank",
             "message":"Hey there,Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu orci, pellentesque nec condimentum a, lacinia eu enim. Nam volutpat augue at convallis congue. Quisque facilisis auctor risus laoreet posuere. Vestibulum tristique pretium arcu, id tincidunt diam eleifend a. Integer laoreet pretium augue, ac elementum augue vestibulum in. Phasellus porttitor, ex id posuere varius, mi justo ullamcorper magna, non congue risus orci non nulla. Nam ut arcu rhoncus, scelerisque nibh vel, ornare ante. Pellentesque et justo dictum, pulvinar odio eu, laoreet enim. Nunc dictum est ex.",
             "nested":[{"id":"12","title":"rip2",
@@ -21,33 +23,21 @@
              }]
         },
         {
-            "id":125,
-            "title":"Dummy",
-            "from":"Frank",
-            "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu orci, pellentesque nec condimentum a, lacinia eu enim. Nam volutpat augue at convallis congue. Quisque facilisis auctor risus laoreet posuere. Vestibulum tristique pretium arcu, id tincidunt diam eleifend a. Integer laoreet pretium augue, ac elementum augue vestibulum in. Phasellus porttitor, ex id posuere varius, mi justo ullamcorper magna, non congue risus orci non nulla. Nam ut arcu rhoncus, scelerisque nibh vel, ornare ante. Pellentesque et justo dictum, pulvinar odio eu, laoreet enim. Nunc dictum est ex.",
-            "nested":[
-                {"id":"41","title":"slasst",
-            "from":"Emilt",
-            "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu orci, pellentesque nec condimentum a, lacinia eu enim. Nam volutpat augue at convallis congue. Quisque facilisis auctor risus laoreet posuere. Vestibulum tristique pretium arcu, id tincidunt diam eleifend a. Integer laoreet pretium augue, ac elementum augue vestibulum in. Phasellus porttitor, ex id posuere varius, mi justo ullamcorper magna, non congue risus orci non nulla. Nam ut arcu rhoncus, scelerisque nibh vel, ornare ante. Pellentesque et justo dictum, pulvinar odio eu, laoreet enim. Nunc dictum est ex."
-             },
-             {"id":"61","title":"lasst",
-            "from":"Emilt",
-            "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu orci, pellentesque nec condimentum a, lacinia eu enim. Nam volutpat augue at convallis congue. Quisque facilisis auctor risus laoreet posuere. Vestibulum tristique pretium arcu, id tincidunt diam eleifend a. Integer laoreet pretium augue, ac elementum augue vestibulum in. Phasellus porttitor, ex id posuere varius, mi justo ullamcorper magna, non congue risus orci non nulla. Nam ut arcu rhoncus, scelerisque nibh vel, ornare ante. Pellentesque et justo dictum, pulvinar odio eu, laoreet enim. Nunc dictum est ex."
-             }
-            ]
+            "id":125 ,
+          
+            "title": "fefef",
+            "type":"map",
+            "purpose":"Pasta Company",
+            "subtext":"good pasta",
+            "location":"https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=delhi+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+    
+          
         },
         {
             "id":133,
             "title":"Test Op",
-            "from":"Frank",
-            "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu orci, pellentesque nec condimentum a, lacinia eu enim. Nam volutpat augue at convallis congue. Quisque facilisis auctor risus laoreet posuere. Vestibulum tristique pretium arcu, id tincidunt diam eleifend a. Integer laoreet pretium augue, ac elementum augue vestibulum in. Phasellus porttitor, ex id posuere varius, mi justo ullamcorper magna, non congue risus orci non nulla. Nam ut arcu rhoncus, scelerisque nibh vel, ornare ante. Pellentesque et justo dictum, pulvinar odio eu, laoreet enim. Nunc dictum est ex.",
-            "nested":[
-                {"id":"16","title":"rip2",
-            "from":"Emilt",
-            "message":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam arcu orci, pellentesque nec condimentum a, lacinia eu enim. Nam volutpat augue at convallis congue. Quisque facilisis auctor risus laoreet posuere. Vestibulum tristique pretium arcu, id tincidunt diam eleifend a. Integer laoreet pretium augue, ac elementum augue vestibulum in. Phasellus porttitor, ex id posuere varius, mi justo ullamcorper magna, non congue risus orci non nulla. Nam ut arcu rhoncus, scelerisque nibh vel, ornare ante. Pellentesque et justo dictum, pulvinar odio eu, laoreet enim. Nunc dictum est ex."
-             }
-               
-            ]
+            "type":"schedule",
+             "time":"9pm"
         }
 
     ]

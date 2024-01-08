@@ -1,86 +1,84 @@
 import React from "react";
-import { Suspense } from "react";
-
-
+import { FiCommand, FiMapPin } from "react-icons/fi";
 import {
   FaEnvelope,
   FaBackspace,
-  FaMapMarkerAlt,
+  FaMicrophone,
+  FaLongArrowAltDown,
   FaLocationArrow,
-  FaShare,
-  FaDumpster
 } from "react-icons/fa";
-import { Divider } from "antd";
-import LazyLoad from "react-lazy-load";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import LoadGlimmer from "./LoadGlimmer";
 
-const Mapview = ({ title, from, isLarge, handleisLarge,purpose,subtext,id }) => {
+const Mapview = ({ title, from, isLarge, handleisLarge, message }) => {
   return (
-    <div className="h-full  text-[#333232] relative w-full  bg-[#F9F8F8] rounded-xl">
+    <div className="min-h-[550px]  text-[#333232] relative w-6/12 bg-[#F9F8F8] rounded-xl text-wrap  translate-x-[-150px] translate-y-[40px]">
       {/* header */}
       <div className="bg-[#F3F2F2] w-full px-10 h-3 py-6 flex items-center justify-between rounded-t-xl">
         <div className="flex gap-2 items-center">
           {" "}
           {isLarge && <FaBackspace onClick={handleisLarge} />}{" "}
-          <FaMapMarkerAlt />
-          <p className="font-extrabold">{title}</p> | <p>{from}</p>
+          <FaLocationArrow />
+          <p className="font-bold">Philz Coffee</p> .{" "}
+          <p className="text-gray-400">Location</p>
+        </div>
+        <div className="text-[#6E6F6F] ">
+          <FaMicrophone />
         </div>
       </div>
       {/* main */}
-      <div className=" flex flex-col">
-        <div className="flex flex-col gap-3">
-          <div className="w-full ">
-          <Suspense loading={<LoadGlimmer/>}>
+      <div className=" flex flex-col ">
+        
+          <div className="flex justify-between items-start">
             <iframe
-               loading="lazy"
               width="100%"
-              
-              height="100%"
+              height="190"
               frameborder="0"
               scrolling="no"
-              marginheight="0"
-              marginwidth="0"
-              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=delhi+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             >
               
             </iframe>
+          </div>
+          <div className="px-10 py-10 gap-1">
+            <p className=" text-3xl  capitalize font-black">Philz Cafe</p>
+         
+          <div className=" sm:text-wrap truncate text-wrap">
+            <p className="line-clamp-6 flex flex-col gap-3 font-bold">
+              <p>Custom-blended java in a casual setting.</p>{" "}
+              <p className="text-gray-400 text-sm">
+              20686 Stevens Creek Blvd <br/>Cupertino, CA 95014
              
-            </Suspense>
+              </p>
+             
+            </p>
           </div>
-        </div>
-        <div className="sm:w-2/5 sm:text-wrap px-10">
-          <p className="font-extrabold capitalize py-9">{title}</p>
-          <div className="flex flex-col">
-          <p>{purpose}</p>
-          <p>{subtext}</p>
           </div>
-          
-        </div>
+       
       </div>
       {/* Footer */}
-      <div className=" px-10 w-full">
-        <Divider
-          className="mb-[-7px] text-[#6E6F6F] "
-          style={{ fontWeight: "bolder" }}
-        />
-        <div className="flex  py-4 gap-2  text-[#6E6F6F] overflow-x-hidden text-sm font-extrabold  ">
-          <button className="bg-[#EEEFEE] pl-5  pr-7 py-2 rounded-3xl flex justify-start items-center gap-2  ">
-            <div>
-              <FaLocationArrow />
-            </div>
-            <div className="text-left hidden sm:block">
-              <p>Get Directions</p>{" "}
-              <p className="sm:text-[0.75rem] font-extralight mt-[-5px] opacity-60 ">
-                Enable location
-              </p>
+      <div className="sm:px-10 flex flex-col justify-start gap-6">
+        <hr />
+        <div className="flex  gap-2 text-[#6E6F6F] ">
+          <button className="bg-[#EEEFEE] px-7 py-2 rounded-xl flex justify-center items-center font-bold">
+            <div className="flex items-center gap-2">
+              <FaLocationArrow/>
+              <div className="text-left">
+                <p>Get Location</p>
+                <p className="text-xs text-gray-400">Share location</p>
+              </div>
+
             </div>
           </button>
-          <button className="bg-[#EEEFEE] px-4 py-2 rounded-3xl">
-            <FaShare className="block sm:hidden"/><p className="hidden sm:block">Forward</p>
+          <button className="bg-[#EEEFEE] px-7 py-2  rounded-xl justify-center items-center font-bold">
+            See details
           </button>
-          <button className="bg-[#EEEFEE] px-4 py-2 rounded-3xl">
-          <FaDumpster className="block sm:hidden"/><p className="hidden sm:block">Delete</p>
+          <button className="bg-[#EEEFEE] px-7 py-2  rounded-xl justify-center items-center font-bold">
+            Find more cafes nearby
+          </button>
+        </div>
+        <div className="flex  gap-2 text-[#6E6F6F]">
+          <button className="text-xs flex gap-5 text-[#6E6F6F] py-3">
+            <FiCommand />
+            <p>More Actions</p>
           </button>
         </div>
       </div>
